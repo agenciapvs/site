@@ -1,0 +1,7 @@
+{
+  "name": "Agência PVS - Marketing Estratégico",
+  "description": "Transformamos sua presença digital em uma máquina de vendas com estratégia, design e tráfego pago.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
