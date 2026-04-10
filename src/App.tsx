@@ -125,15 +125,15 @@ const Hero = () => (
             <motion.div 
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-6 -right-6 glass-card p-4 shadow-xl"
+              className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-500">
                   <TrendingUp size={20} />
                 </div>
                 <div>
-                  <p className="text-[10px] text-slate-400 uppercase font-bold">Visualizações geradas</p>
-                  <p className="text-lg font-bold">+142%</p>
+                  <p className="text-[10px] text-black uppercase font-bold">Visualizações geradas</p>
+                  <p className="text-lg font-bold text-black">+142%</p>
                 </div>
               </div>
             </motion.div>
