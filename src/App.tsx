@@ -434,23 +434,37 @@ export default function App() {
       <Hero />
       <WhatsAppFloatingButton />
       
-      <section className="py-12 border-y border-white/5 bg-white/[0.02]">
-        <div className="container mx-auto px-6 flex flex-wrap justify-center gap-8 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-          <div className="h-16 w-40 flex items-center justify-center">
-            <img src="/construforti.jpeg" alt="Construforti" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="h-16 w-40 flex items-center justify-center">
-            <img src="/fergus.jpeg" alt="Fergus" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="h-16 w-40 flex items-center justify-center">
-            <img src="/jms.jpeg" alt="JMS" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="h-16 w-40 flex items-center justify-center">
-            <img src="/moreira.jpeg" alt="Moreira" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="h-16 w-40 flex items-center justify-center">
-            <img src="/morumbi.jpeg" alt="Morumbi" className="max-h-full max-w-full object-contain" />
-          </div>
+      <section className="py-12 border-y border-white/5 bg-white/[0.02] overflow-hidden">
+        <div className="flex">
+          <motion.div 
+            animate={{ x: [0, -1000] }}
+            transition={{ 
+              duration: 20, 
+              repeat: Infinity, 
+              ease: "linear" 
+            }}
+            className="flex gap-12 md:gap-20 items-center whitespace-nowrap px-6"
+          >
+            {[...Array(3)].map((_, i) => (
+              <div key={i} className="flex gap-12 md:gap-20 items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <div className="h-[115px] w-[115px] flex items-center justify-center flex-shrink-0">
+                  <img src="/construforti.jpeg" alt="Construforti" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-[115px] w-[115px] flex items-center justify-center flex-shrink-0">
+                  <img src="/fergus.jpeg" alt="Fergus" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-[115px] w-[115px] flex items-center justify-center flex-shrink-0">
+                  <img src="/jms.jpeg" alt="JMS" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-[115px] w-[115px] flex items-center justify-center flex-shrink-0">
+                  <img src="/moreira.jpeg" alt="Moreira" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-[115px] w-[115px] flex items-center justify-center flex-shrink-0">
+                  <img src="/morumbi.jpeg" alt="Morumbi" className="max-h-full max-w-full object-contain" />
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
