@@ -214,7 +214,7 @@ const ProblemSection = () => (
                 <motion.path 
                   initial={{ pathLength: 0 }}
                   whileInView={{ pathLength: 1 }}
-                  viewport={{ once: true, amount: 0.3 }}
+                  viewport={{ once: true, amount: 0.6 }}
                   transition={{ duration: 2, ease: "easeOut" }}
                   d="M0 85 Q 50 85, 100 60 T 200 10" 
                   fill="none" 
